@@ -1,0 +1,13 @@
+It's a podcast!  It's a blog!  It's a podblog!
+
+This is the podcast/blog engine that powers the "Minimum Viable" website.  It's
+a a typical "Mad Wombat" special, with the following components:
+
+- Rails 3.x
+- Jruby
+- PostgreSQL
+- Mizuno
+
+This means it's incredibly fast.  Really, stupid fast.
+
+NOTE TO DON:  For simplicity's sake, we're using autoincrementing integer IDs rather than UUIDs.  Yes, I know.
