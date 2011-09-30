@@ -22,7 +22,7 @@ end
 gem 'jquery-rails'
 
 # Use mizuno as the web server
- gem 'mizuno', '= 0.4.0'
+gem 'mizuno', '= 0.4.0'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -36,3 +36,9 @@ gem 'rspec', '= 2.6.0'
 gem 'rspec-rails', '= 2.6.1'
 gem 'capybara', '= 1.1.1'
 gem 'steak', '= 2.0.0'
+
+
+# Gems for, you know, doing stuff.
+gem 'paperclip', '= 2.4.2'
+gem 'acl9', '= 0.12.0'
+gem 'authlogic', '= 3.0.3'
