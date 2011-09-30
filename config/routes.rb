@@ -1,4 +1,6 @@
 Podblog::Application.routes.draw do
+  resources :users
+
   resources :podcasts
 
   resources :posts
