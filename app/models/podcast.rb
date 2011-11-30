@@ -15,7 +15,23 @@ class Podcast < ActiveRecord::Base
 #   keywords - Keywords, for searching. Ex: "wombats, fun,
 #              dishsoap"
 #
+# We also store the actual podcast file as a Paperclip
+# attachment (using S3) called "data".  This means we 
+# have the following paperclip fields:
+#   data_file_name
+#   data_content_type
+#   data_file_size
+#   data_updated_at
+#
 #   Plus, the obligatory timestamps.
 
   belongs_to :post
+
+  has_attached_file( :data,
+                     :storage => :s3,
+                     :s3_credentials => 
+                       "#{Rails.root}/config/s3.yml",
+                     :path => ":class/:id/:filename",
+                     :processors => [:despacer, 
+                                     :timestamper] )
 end
