@@ -1,6 +1,5 @@
-# We have a custom paperclip processor that adds a 
-# timestamp prefix to the filename.  Useful for CDNs like
-# Cloudfront.
+# We have a custom paperclip processor that adds a timestamp prefix to the 
+# filename.  Useful for CDNs like Cloudfront.
 #
 # Totally stolen from http://urbanautomaton.com/blog/2011/04/22/paperclip-timestamping-attachments-on-upload/
 

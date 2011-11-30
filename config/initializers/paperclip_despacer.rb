@@ -1,6 +1,6 @@
 module Paperclip
-# Custom paperclip processor that replaces the spaces
-# with underscores in the file names.
+# Custom paperclip processor that replaces the spaces with underscores in the 
+# file names.
 # Adapted from http://urbanautomaton.com/blog/2011/04/22/paperclip-timestamping-attachments-on-upload/
   class Despacer < Processor
     def initialize(file, options={}, attachment=nil)
