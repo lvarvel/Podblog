@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-# Users!  Pretty much used only for authentication.
+# Users!  Used for authentication, and also own posts.
 #
 # Users have the following fields:
 #   name - The user's full human-friendly name
@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
 #   Plus, the obligatory timestamps.
 
   has_secure_password    
+  has_many :posts
 
   validates :password, :presence => {:on => :create}
 
