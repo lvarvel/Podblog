@@ -8,6 +8,7 @@ class CreatePodcasts < ActiveRecord::Migration
       t.timestamp "pubdate"
       t.string "duration"
       t.timestamps
+      t.string "keywords"
     end
   end
 end
