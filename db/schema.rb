@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20110930064646) do
     t.string   "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "keywords"
   end
 
   create_table "posts", :force => true do |t|
